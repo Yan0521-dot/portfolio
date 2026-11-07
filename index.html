@@ -21,6 +21,7 @@
         <a href="#certificates">Certificates</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
+        <a href="#rush">1 Year Rush</a>
         <a href="#speaking">Speaking</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -45,10 +46,22 @@
             and building technology that solves real-world problems.
         </p>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="button primary">Explore My Work ↗</a>
-            <a href="#contact" class="button secondary">Contact Me</a>
-        </div>
+
+<div class="hero-buttons">
+    <a href="#projects" class="button primary">Explore My Work ↗</a>
+    <a href="#contact" class="button secondary">Contact Me</a>
+
+    <button type="button" class="button secondary document-button"
+            data-document="Resume">
+        <i class="fa-solid fa-file-lines"></i> Resume
+    </button>
+
+    <button type="button" class="button secondary document-button"
+            data-document="CV">
+        <i class="fa-solid fa-file-pdf"></i> CV
+    </button>
+</div>
+
 
         <div class="hero-role">
             <span class="status-dot"></span>
@@ -81,6 +94,39 @@
         >
     </div>
 </section>
+
+
+<!-- DOCUMENT AVAILABILITY POPUP -->
+<div id="document-popup" class="document-popup"
+     role="dialog" aria-modal="true"
+     aria-labelledby="document-popup-title"
+     aria-hidden="true">
+
+    <div class="document-popup-content">
+        <button type="button" class="document-popup-close"
+                aria-label="Close popup">&times;</button>
+
+        <div class="document-popup-icon">
+            <i class="fa-solid fa-file-circle-info"></i>
+        </div>
+
+        <p class="eyebrow">DOCUMENT AVAILABILITY</p>
+
+        <h3 id="document-popup-title">Resume & CV</h3>
+
+        <p id="document-popup-message">
+            Thank you for your interest in me!
+            My Resume and CV will be available approximately
+            two months before my internship begins.
+            Stay tuned!
+        </p>
+
+        <button type="button" class="button primary"
+                id="document-popup-ok">
+            Got it
+        </button>
+    </div>
+</div>
 
 
 <!-- ABOUT SECTION -->
@@ -545,6 +591,99 @@
         </article>
 
     </div>
+</section>
+
+
+<!-- 1 YEAR RUSH -->
+<section id="rush" class="section rush-section">
+
+    <div class="section-heading">
+        <p class="eyebrow">THE ROAD TO INTERNSHIP · 2026–2027</p>
+        <h2>1 YEAR <span>RUSH.</span></h2>
+        <p>
+         <p>
+           I am challenging myself to expand my capabilities and prepare
+           for the cybersecurity industry. Before my internships, this is
+           the only last year's countdown to prepare myself, and push
+           myself towards success, as well as bringing the company a
+           real talented, disciplined employee.
+         </p>
+        </p>
+    </div>
+
+    <div class="rush-hero">
+        <div class="rush-intro">
+            <p class="eyebrow">THE MISSION</p>
+            <h3>Pushing myself towards the limit.</h3>
+            <p>
+                This is my personal preparation year. I want to push
+                myself beyond my comfort zone, gain meaningful
+                experience, strengthen my technical knowledge and
+                pursue professional certifications before my
+                expected internship in October 2027.
+            </p>
+        </div>
+
+        <div class="rush-countdown">
+            <p class="eyebrow">TARGET INTERNSHIP</p>
+            <strong id="rush-countdown">Loading...</strong>
+            <span>Days until October 2027</span>
+            <p>Target: 1 October 2027</p>
+        </div>
+    </div>
+
+    <div class="rush-pillars">
+
+        <article class="rush-pillar">
+            <span class="rush-number">01</span>
+            <h3>Experience</h3>
+            <p>
+                Participate in cybersecurity events, hackathons,
+                workshops, sharing sessions and real-world projects.
+            </p>
+        </article>
+
+        <article class="rush-pillar">
+            <span class="rush-number">02</span>
+            <h3>Knowledge</h3>
+            <p>
+                Strengthen my foundations in networking, Linux,
+                computer forensics, ethical hacking, SOC operations
+                and security analysis.
+            </p>
+        </article>
+
+        <article class="rush-pillar">
+            <span class="rush-number">03</span>
+            <h3>Certifications</h3>
+            <p>
+                Work towards industry-recognised certifications
+                and continuously validate my technical skills.
+            </p>
+        </article>
+
+    </div>
+
+    <div class="rush-timeline-heading">
+        <div>
+            <p class="eyebrow">THE JOURNEY</p>
+            <h3>Milestones & <span>Upcoming Events.</span></h3>
+            <p>
+                Every opportunity, achievement and milestone
+                becomes part of this journey.
+            </p>
+        </div>
+        <span class="rush-live-label">
+            <span class="rush-live-dot"></span>
+            LIVE TIMELINE
+        </span>
+    </div>
+
+    <div id="rush-timeline" class="rush-timeline"
+         aria-live="polite">
+        <p class="rush-loading">Loading mission timeline...</p>
+    </div>
+
 </section>
 
 
