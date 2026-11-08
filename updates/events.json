@@ -1,4 +1,3 @@
-
 [
   {
     "date": "2026-11-08",
@@ -7,6 +6,22 @@
     "title": "1 YEAR RUSH Begins",
     "description": "The preparation year begins. A personal commitment to push beyond my comfort zone, strengthen my cybersecurity knowledge, gain practical experience and pursue professional certifications before internship.",
     "status": "active"
+  },
+  {
+    "date": "2026-11-10",
+    "dateLabel": "NOVEMBER 10–24, 2026",
+    "category": "SELECTED TRAINING PROGRAMME",
+    "title": "Perwira Cyber Industrial Training",
+    "description": "Selected to participate in the Perwira Cyber Industrial Training, a fully funded training programme for selected participants, conducted in collaboration with NADI Cybersecurity and BlackBerry Cybersecurity Center of Excellence.",
+    "status": "active"
+  },
+  {
+    "date": "2026-11-11",
+    "dateLabel": "NOVEMBER 11, 2026",
+    "category": "CYBER AWARENESS INITIATIVE",
+    "title": "Mini Cyber Awareness Programme",
+    "description": "Conducting a physical mini cyber awareness programme at NADI Semenyih, organised by NADI × Cybersecurity. The initiative aims to educate students about cyber threats and scams, including how to identify suspicious activities, respond to potential threats and protect themselves from scams.",
+    "status": "upcoming"
   },
   {
     "date": "2027-10-01",
