@@ -1,3 +1,4 @@
+
 [
   {
     "date": "2026-11-08",
@@ -17,11 +18,33 @@
   },
   {
     "date": "2026-11-11",
-    "dateLabel": "NOVEMBER 11, 2026",
+    "dateLabel": "11 NOVEMBER 2026",
+    "category": "STUDENT LEADERSHIP",
+    "title": "Selected for UNIRAZAK Student Representative Council (SRC)",
+    "description": "Selected for the Biro Events and Community Engagement through UNIRAZAK's annual SRC interview process. The Student Representative Council serves as a bridge between students and university management, representing student perspectives and facilitating communication on university matters.",
+    "status": "active"
+  },
+  {
+    "date": "2026-11-14",
+    "dateLabel": "14–15 NOVEMBER 2026",
+    "category": "NASA SPACE APPS CHALLENGE",
+    "title": "NASA Space Apps Challenge 2026 — IGNIS",
+    "description": "Participated in the NASA Space Apps Challenge 2026 and developed IGNIS, a research platform designed to help users explore, compare and interpret NASA microgravity combustion research.",
+    "status": "completed",
+    "image": "1%20year%20rush/Nasa%20cert.jpeg",
+    "imageAlt": "NASA Space Apps Challenge 2026 certificate"
+  },
+  {
+    "date": "2026-11-21",
+    "dateLabel": "21 NOVEMBER 2026",
     "category": "CYBER AWARENESS INITIATIVE",
     "title": "Mini Cyber Awareness Programme",
     "description": "Conducting a physical mini cyber awareness programme at NADI Semenyih, organised by NADI × Cybersecurity. The initiative aims to educate students about cyber threats and scams, including how to identify suspicious activities, respond to potential threats and protect themselves from scams.",
-    "status": "upcoming"
+    "status": "upcoming",
+    "image": "1%20year%20rush/Nadi%20Talk%20Poster.png",
+    "imageAlt": "NADI Mini Cyber Awareness Programme poster",
+    "linkUrl": "1%20year%20rush/PERWIRA%20CYBER%20-%20SURAT%20JEMPUTAN%20%28%20hidden%20info%20%29.pdf",
+    "linkText": "View Official Invitation Letter (PDF)"
   },
   {
     "date": "2027-10-01",

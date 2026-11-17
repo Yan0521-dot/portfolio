@@ -239,6 +239,32 @@ async function initialiseRushTimeline() {
             description.textContent = event.description || "";
 
             article.append(meta, title, description);
+
+            // Optional event image
+            if (event.image) {
+                const image = document.createElement("img");
+
+                image.className = "rush-event-image";
+                image.src = event.image;
+                image.alt = event.imageAlt || event.title || "Timeline image";
+                image.loading = "lazy";
+
+                article.appendChild(image);
+            }
+
+            // Optional document link
+            if (event.linkUrl) {
+                const link = document.createElement("a");
+
+                link.className = "text-link rush-event-link";
+                link.href = event.linkUrl;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = event.linkText || "View Document";
+
+                article.appendChild(link);
+            }
+
             timeline.appendChild(article);
         });
 

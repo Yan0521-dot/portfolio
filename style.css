@@ -1055,3 +1055,23 @@ footer p {
 .hero-buttons .document-button i {
     font-size: 0.85rem;
 }
+
+/* 1 YEAR RUSH - TIMELINE MEDIA */
+
+.rush-event-image {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    max-height: 380px;
+    object-fit: contain;
+    object-position: left center;
+    margin-top: 18px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: #0c1423;
+}
+
+.rush-event-link {
+    display: inline-block;
+    margin-top: 15px;
+}
