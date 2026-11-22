@@ -138,7 +138,7 @@ async function initialiseRushTimeline() {
     function updateCountdown() {
         if (!countdown) return;
 
-        const targetDate = new Date("2027-10-01T00:00:00+08:00");
+        const targetDate = new Date("2027-11-01T00:00:00+08:00");
         const now = new Date();
 
         const difference = targetDate.getTime() - now.getTime();
