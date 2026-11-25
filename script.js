@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         year.textContent = new Date().getFullYear();
     }
 
+    initialiseVideoPopup();
     initialiseScrollCards();
     initialiseImagePreview();
     initialiseNavigation();
@@ -40,7 +41,7 @@ function initialiseScrollCards() {
 // in a larger preview when clicked
 function initialiseImagePreview() {
     const images = document.querySelectorAll(
-        ".image-card img, .timeline-content img"
+        ".image-card:not(.video-card) img, .timeline-content img"
     );
 
     const overlay = document.createElement("div");
@@ -281,6 +282,96 @@ async function initialiseRushTimeline() {
 
 
 // =========================================
+
+// =========================================
+// NADI CYBERSECURITY VIDEO POPUP
+// =========================================
+
+function initialiseVideoPopup() {
+    const triggers = document.querySelectorAll(".video-card-trigger");
+
+    if (!triggers.length) return;
+
+    const overlay = document.createElement("div");
+    overlay.className = "video-preview";
+    overlay.setAttribute("aria-hidden", "true");
+
+    overlay.innerHTML = `
+        <div class="video-preview-dialog" role="dialog"
+             aria-modal="true"
+             aria-label="NADI Cybersecurity Success Story video">
+
+            <button class="video-preview-close"
+                    type="button"
+                    aria-label="Close video">
+                &times;
+            </button>
+
+            <video controls playsinline preload="none">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    const video = overlay.querySelector("video");
+    const closeButton = overlay.querySelector(".video-preview-close");
+
+    let activeTrigger = null;
+
+    function openVideo(trigger) {
+        activeTrigger = trigger;
+
+        video.src = trigger.dataset.videoSrc;
+        overlay.classList.add("active");
+        overlay.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+
+        video.load();
+        video.play().catch(() => {});
+
+        closeButton.focus();
+    }
+
+    function closeVideo() {
+        if (!overlay.classList.contains("active")) return;
+
+        video.pause();
+        video.removeAttribute("src");
+        video.load();
+
+        overlay.classList.remove("active");
+        overlay.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+
+        if (activeTrigger) {
+            activeTrigger.focus();
+            activeTrigger = null;
+        }
+    }
+
+    triggers.forEach(trigger => {
+        trigger.addEventListener("click", () => {
+            openVideo(trigger);
+        });
+    });
+
+    closeButton.addEventListener("click", closeVideo);
+
+    overlay.addEventListener("click", event => {
+        if (event.target === overlay) {
+            closeVideo();
+        }
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && overlay.classList.contains("active")) {
+            closeVideo();
+        }
+    });
+}
+
 // RESUME & CV AVAILABILITY POPUP
 // =========================================
 
